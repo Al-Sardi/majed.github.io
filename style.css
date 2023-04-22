@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -12,19 +10,24 @@ html{
 
 body{
     height: 100%;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #efefef;
+    display: block;
 }
 
 main{
+    display: block;
+}
+
+.content_one{
     display: flex;
     justify-content: center;
 }
 
-main img{
-    width: 200px;    
+#anwari{
+    width: 200px;
 }
 
-#colored{
+.colored{
     color: #000fff;
 }
