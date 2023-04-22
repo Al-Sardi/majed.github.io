@@ -1,7 +1,6 @@
-
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 html{
@@ -10,25 +9,20 @@ html{
 
 body{
     height: 100%;
+    background-color: #cccccc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #efefef;
-    display: flex;
-    justify-content: center;
 }
 
-main{
-    display: flex;
+h1{
+    color: aqua;
+
 }
 
-.content_one{
-    display: flex;
-    justify-content: center;
+h2{
+    color: red;
+
 }
 
-#anwari{
-    width: 200px;
-}
-
-.colored{
-    color: #000fff;
+h3{
+    color: green;
 }
