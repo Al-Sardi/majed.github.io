@@ -16,8 +16,13 @@ body{
     background-color: #efefef;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+}
+
 main img{
-    width: 200px;
+    width: 200px;    
 }
 
 #colored{
