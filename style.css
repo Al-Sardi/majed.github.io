@@ -14,28 +14,12 @@ body{
     height: 100%;
     font-family: 'poppins', sans-serif;
     background-color: #efefef;
-    --schwarz: rgb(0, 0, 0);
 }
 
 main img{
     width: 200px;
 }
 
-main h1{
-    color: var(--schwarz);
-}
-main h2{
-    color: var(--schwarz);
-}
-main h3{
-    color: var(--schwarz);
-}
-main h4{
-    color: var(--schwarz);
-}
-main h5{
-    color: var(--schwarz);
-}
-main h6{
-    color: var(--schwarz);
+#colored{
+    color: #000fff;
 }
