@@ -12,11 +12,12 @@ body{
     height: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #efefef;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 main{
-    display: block;
+    display: flex;
 }
 
 .content_one{
