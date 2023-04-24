@@ -41,7 +41,7 @@ body{
     justify-content: center;
     align-items: center;
     border-bottom: solid 1px var(--blau-zwei);
-    position: fixed;
+    position: sticky;
     background-color: var(--blau-eins);
 }
 
@@ -131,7 +131,7 @@ body{
 .navbar .menu-items {
     background-color: rgba(5, 0, 35, 0.95);
     padding-top: 120px;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     transform: translate(-150%);
     display: flex;
