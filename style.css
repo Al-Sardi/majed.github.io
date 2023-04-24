@@ -222,6 +222,7 @@ main{
     transition: all 0.2s;
     position: relative;
     cursor: pointer;
+    z-index: -2;
 }
   
 .section-one .card-inner {
