@@ -241,11 +241,15 @@ footer{
 
 .flog{
     padding: 20px 0px 20px 0px;
+    display: block;
+}
+
+.fl-content{
     display: flex;
     justify-content: space-evenly;
 }
 
-.flog a{
+.fl-content a{
     border: solid 1px var(--blau-zwei);
     border-radius: 20px;
     padding: 10px;
@@ -254,17 +258,17 @@ footer{
     font-size: small;
 }
 
-.flog a div{
+.fl-content a div{
     display: block;
 }
 
-.flog a div h5{
+.fl-content a div h5{
     display: flex;
     justify-content: center;
     color: var(--blau-zwei);
 }
 
-.flog a div h2{
+.fl-content a div h2{
     display: flex;
     justify-content: center;
 }
