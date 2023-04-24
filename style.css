@@ -41,6 +41,8 @@ body{
     justify-content: center;
     align-items: center;
     border-bottom: solid 1px var(--blau-zwei);
+    position: fixed;
+    background-color: var(--blau-eins);
 }
 
 .nav-container {
@@ -196,9 +198,7 @@ main{
     height: 350px;
     background-color: var(--blau-zwei);
     border-radius: 30px;
-    margin-top: 20px; 
 }
-
 
 #mapscfg{
     width: 100%;
@@ -215,53 +215,50 @@ footer{
     font-size: small;
     font-weight: 100;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
     padding: 10px;
     border-top: solid 1px #1C77F2;
 }
 
+.parts-allg{
+    display: block;
+    font-size: medium;
+    font-weight: 200;
+}
+
 .part_one{
-    display: flex;
+    display: block;
 }
 
 .part_one ul{
     display: block;
-    list-style: none;
-    font-size: small;
-    font-weight: 100;
 }
 
 .part_one ul li{
-    text-decoration: none;
     display: flex;
     align-items: center;
 }
 
 .part_one ul li img{
-    padding-left: 8px;
-    width: 20px;
+    padding-left: 20px;
+    width: 28px;
 }
 
 .part_two{
-    display: flex;
+    display: block;
 }
 
 .part_two ul{
     display: block;
-    list-style: none;
-    font-size: small;
-    font-weight: 100;
     padding: 5px 0px 5px 0px;
 }
 
 .part_two ul li{
-    text-decoration: none;
     display: flex;
     align-items: center;
 }
 
 .part_two ul li img{
-    padding-left: 8px;
-    width: 15px;
+    padding-left: 20px;
+    width: 28px;
 }
