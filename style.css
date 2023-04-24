@@ -52,7 +52,7 @@ body{
 
 .navbar .menu-items {
     display: flex;
-    border-right: solid 1px #4500f2;
+    border-right: solid 1px var(--blau-zwei);
     border-radius: 0px 30px 30px 0px;
 }
 
@@ -108,7 +108,7 @@ body{
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #ffffff;
+    background: #efefef;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -185,6 +185,19 @@ body{
 main{
     padding: 20px;
 }
+
+.sections{
+    display: block;
+}
+
+.sects-allg{
+    width: 100%;
+    height: 350px;
+    background-color: var(--blau-zwei);
+    border-radius: 30px;
+    margin-top: 20px; 
+}
+
 
 #mapscfg{
     width: 100%;
