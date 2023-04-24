@@ -35,12 +35,8 @@ body{
     margin: auto;
 }
 
-nav{
-    padding: 10px 0px 10px 0px;
-}
-
 .navbar {
-    width: 100%;
+    width: 100%;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +98,7 @@ nav{
     width: 32px;
     position: absolute;
     top: 17px;
-    right: 20px;
+    right: -5px;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -154,7 +150,6 @@ nav{
 
 .ueberschrift {
     position: absolute;
-    top: 5px;
     left: 15px;
     font-size: 1.1rem;
     font-weight: 400;
@@ -213,10 +208,10 @@ main{
     display: block;
 }
 
-.sects-allg{
+.sections section{
     width: 100%;
     height: 350px;
-    background-color: var(--blau-zwei);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 30px;
 }
 
