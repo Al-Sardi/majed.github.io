@@ -142,6 +142,12 @@ body{
     font-weight: 500;
 }
 
+#home-li{
+    color: var(--blau-zwei);
+    font-size: x-large;
+    font-weight: 800;
+}
+
 .ueberschrift {
     position: absolute;
     left: 15px;
@@ -200,7 +206,6 @@ main{
 
 .main-cards{
     display: block;
-    z-index: 0;
 }
 
 .main-cards div{
@@ -286,13 +291,13 @@ main{
 }
   
 .section-one .circle:nth-child(1) {
-    top: -5px;
-    left: -5px;
+    top: -15px;
+    left: -15px;
 }
   
 .section-one .circle:nth-child(2) {
-    bottom: -5px;
-    right: -5px;
+    bottom: -15px;
+    right: -15px;
     animation-name: move-down1;
 }
   
