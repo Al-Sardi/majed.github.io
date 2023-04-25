@@ -29,3 +29,11 @@ body{
     font-size: medium;
     font-weight: 100;
 }
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    
+}
