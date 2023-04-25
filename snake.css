@@ -32,8 +32,38 @@ body{
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     z-index: 1;
-    
+    background-color: rgba(5, 0, 35, 0.9);
+    padding: 10px 20px 10px 20px;
+    box-shadow: 0 0 6px #ffffff;
+}
+
+header .left{
+    display: block;
+}
+
+header .left a img{
+    width: 30px;
+    object-fit: cover;
+    box-shadow: 0 0 2px #588157;
+}
+
+.mid{
+    display: block;
+}
+
+.mid h1{
+    text-shadow: 1px 1px 5px var(--grun-drei);
+}
+
+.right{
+    display: block;
+}
+
+main{
+    display: block;
+    width: 100%;
+    padding: 10px;
 }
