@@ -179,7 +179,7 @@ body{
 }
 
 .nav-container input[type="checkbox"]:checked ~ .menu-items {
-    transform: translateX(0);
+    transform: translateX(-10);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
@@ -277,40 +277,6 @@ main{
     border-radius: 20px 5px 20px 5px;
     padding: 4px 10px 4px 10px;
     z-index: 1;
-}
-
-.section-one .circle {
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(#b0e633, #53ef7d);
-    border-radius: 50%;
-    position: absolute;
-    animation: move-up6 2s ease-in infinite alternate-reverse;
-    z-index: 0;
-
-}
-  
-.section-one .circle:nth-child(1) {
-    top: -15px;
-    left: -15px;
-}
-  
-.section-one .circle:nth-child(2) {
-    bottom: -15px;
-    right: -15px;
-    animation-name: move-down1;
-}
-  
-@keyframes move-up6 {
-    to {
-      transform: translateY(-10px);
-    }
-}
-  
-@keyframes move-down1 {
-    to {
-      transform: translateY(10px);
-    }
 }
 
 
