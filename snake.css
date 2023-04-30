@@ -22,8 +22,7 @@ body{
     --grun-vier: #a3b18a;
     --grun-funf: #dad7cd;
     height: 100%;
-    width: 100%;
-    background-color: var(--grun-eins);
+    background-color: var(--blau-eins);
     font-family: "Poppins", sans-serif;
     display: block;
     color: #ffffff;
@@ -38,8 +37,6 @@ header{
     z-index: 1;
     background-color: rgba(5, 0, 35, 0.9);
     padding: 10px 20px 10px 20px;
-    width: 100%;
-    box-shadow: 0 0 6px #ffffff;
 }
 
 header .left{
@@ -51,6 +48,7 @@ header .left a img{
     object-fit: cover;
     box-shadow: 0 0 2px #588157;
 }
+
 
 .mid{
     display: block;
@@ -67,5 +65,12 @@ header .left a img{
 main{
     display: block;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
+    background-color: var(--grun-eins);
+}
+
+.game-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
