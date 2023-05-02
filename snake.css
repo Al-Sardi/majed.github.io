@@ -43,10 +43,13 @@ header .left{
     display: block;
 }
 
-header .left a img{
+header .left a svg{
     width: 30px;
-    object-fit: cover;
-    box-shadow: 0 0 2px #588157;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 2px 4px 2px 2px;
 }
 
 

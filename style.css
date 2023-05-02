@@ -335,7 +335,7 @@ footer{
     display: block;
     font-size: x-large;
     font-weight: 100;
-    padding: 5px 0px 5px 0px;
+    padding: 5px 10px 5px 10px;
 }
 
 .flog_two ul{
@@ -348,11 +348,9 @@ footer{
     padding-top: 20px;
 }
 
-.flog_two ul li img{
+.flog_two ul li svg{
     padding-right: 20px;
-    width: 28px;
-}
-
-#footer_end_name{
+    width: 20px;
+    height: 20px;
     color: var(--blau-zwei);
 }
