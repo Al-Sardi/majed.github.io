@@ -125,7 +125,7 @@ body{
     padding-top: 120px;
     height: 100vh;
     width: 100%;
-    transform: translateX(150%);
+    transform: translateY(-150%);
     display: flex;
     flex-direction: column;
     margin-right: 40px;
@@ -149,6 +149,10 @@ body{
     color: var(--blau-zwei);
     font-size: x-large;
     font-weight: 800;
+}
+
+.menu-items_last-li{
+    padding-top: 100px;
 }
 
 .ueberschrift {
@@ -221,7 +225,6 @@ main{
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
     border-radius: 30px;
     display: block;
-    backdrop-filter: blur(10px);
 }
 
 .card-inner .one{
@@ -266,7 +269,6 @@ main{
     font-weight: 500;
     border-radius: 20px 5px 20px 5px;
     padding: 4px 10px 4px 10px;
-    z-index: 1;
 }
 
 
