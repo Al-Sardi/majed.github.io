@@ -272,6 +272,32 @@ main{
 
 .section-two{
     background-color: var(--grau-a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-two span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-two span img{
+    border-radius: 20px;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.section-two span a{
+    color: var(--grau-i);
+}
+
+.section-two span svg{
+    color: var(--confluence-blue);
+    padding-left: 5px;
 }
 
 footer{
