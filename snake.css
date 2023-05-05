@@ -14,15 +14,14 @@ html{
 }
 
 body{
-    --blau-eins: #050023;
-    --blau-zwei: #1C77F2;
+    --confluence-blue: #1C77F2;
     --grun-eins: #344e41;
     --grun-zwei: #3a5a40;
     --grun-drei: #588157;
     --grun-vier: #a3b18a;
     --grun-funf: #dad7cd;
     height: 100%;
-    background-color: var(--blau-eins);
+    background-color: var(--grun-eins);
     font-family: "Poppins", sans-serif;
     display: block;
     color: #ffffff;
@@ -35,8 +34,9 @@ header{
     justify-content: space-around;
     align-items: center;
     z-index: 1;
-    background-color: rgba(5, 0, 35, 0.9);
+    background-color: rgba(52, 78, 65, .9);
     padding: 10px 20px 10px 20px;
+    border-bottom: solid 1px var(--grun-funf);
 }
 
 header .left{
@@ -46,7 +46,7 @@ header .left{
 header .left a svg{
     width: 30px;
     height: 30px;
-    border: solid 1px #ffffff;
+    border: solid 1px var(--grun-funf);
     border-radius: 30px;
     color: #ffffff;
     padding: 2px 4px 2px 2px;
@@ -69,7 +69,6 @@ main{
     display: block;
     width: 100%;
     padding: 20px;
-    background-color: var(--grun-eins);
 }
 
 .game-area{
