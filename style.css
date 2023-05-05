@@ -15,6 +15,9 @@ html{
 
 body{
     --confluence-blue: #1C77F2;
+    --rosa: #db0987;
+    --green: #2fb000;
+    --yellow: #ccff25;
     --grau: #111416;
     --grau-a: #212529;
     --grau-b: #343a40;
@@ -225,6 +228,7 @@ main{
     height: 350px;
     border-radius: 30px;
     display: block;
+    background-color: var(--green);
 }
 
 .card-inner .one{
@@ -233,7 +237,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(5, 105, 33, 1.0), rgba(5, 105, 33, .9));
     border-radius: 30px 30px 0px 0px;
 }
 
@@ -256,7 +259,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(5, 105, 33, .9), rgba(5, 105, 33, 1.0));
     border-radius: 0 0 30px 30px;
 }
 
@@ -271,7 +273,7 @@ main{
 }
 
 .section-two{
-    background-color: var(--grau-a);
+    background-color: var(--rosa);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -293,15 +295,20 @@ main{
 
 .section-two span a{
     color: var(--grau-i);
+    display: flex;
+    align-items: center;
+    padding: 4px 16px 4px 20px;
+    border-radius: 20px;
+    background-color: var(--grau);
+    font-size: large;
 }
 
-.section-two span svg{
+.section-two span a svg{
     color: var(--confluence-blue);
     padding-left: 5px;
 }
 
 footer{
-    background-color: var(--confluence-blue);
     color: var(--grau-i);
     font-size: small;
     font-weight: 100;
@@ -310,16 +317,19 @@ footer{
 }
 
 .flog{
+    margin: 0 15px 0 15px;
+    background-color: var(--confluence-blue);
+    border-radius: 20px;
     padding: 24px 0px 24px 0px;
     display: block;
 }
 
-.fl-content{
+.flog-content{
     display: flex;
     justify-content: space-evenly;
 }
 
-.fl-content a{
+.flog-content a{
     border-radius: 20px;
     padding: 10px;
     margin: 0px 12px 0px 12px;
@@ -329,17 +339,17 @@ footer{
     background-color: var(--grau-i);
 }
 
-.fl-content a div{
+.flog-content a div{
     display: block;
 }
 
-.fl-content a div h5{
+.flog-content a div h5{
     display: flex;
     justify-content: center;
     color: var(--grau);
 }
 
-.fl-content a div h2{
+.flog-content a div h2{
     display: flex;
     justify-content: center;
     color: var(--grau);
@@ -367,5 +377,5 @@ footer{
     padding-right: 20px;
     width: 20px;
     height: 20px;
-    color: var(--confluence-blue);
+    color: var(--yellow);
 }
