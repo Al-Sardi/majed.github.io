@@ -1,0 +1,133 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    --confluence-blue: #1C77F2;
+    --rosa: #db0987;
+    --green: #2fb000;
+    --yellow: #ffdd00;
+    --grau: #111416;
+    --grau-a: #212529;
+    --grau-b: #343a40;
+    --grau-c: #495057;
+    --grau-d: #6c757d;
+    --grau-e: #adb5bd;
+    --grau-f: #ced4da;
+    --grau-g: #dee2e6;
+    --grau-h: #e9ecef;
+    --grau-i: #f8f9fa;
+    height: 100%;
+    background-color: var(--grau);
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 100;
+} 
+
+header{
+    border-bottom: solid 1px var(--yellow);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+header .left{
+    align-items: center;
+    background-color: var(--grau-a);
+    border-radius: 10px;
+    padding: 2px 3px 0px 2px;
+}
+
+header .left a svg{
+    color: var(--yellow);
+}
+
+header .mid{
+    align-items: center;
+}
+
+header .mid h1{
+    font-size: x-large;
+    font-weight: 400;
+}
+
+header .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+header .right img{
+    --header-content-right-img-width-and-height: 40px;
+    width: var(--header-content-right-img-width-and-height);
+    height: var(--header-content-right-img-width-and-height);
+    object-fit: cover;
+}
+
+main{
+    display: block;
+    padding: 30px;
+    font-size: large;
+    font-weight: 300;
+}
+
+.content-one{
+    display: flex;
+    align-items: center;
+}
+
+#startbutton{
+    color: #ffffff;
+    background-color: var(--grau-a);
+    border: solid 1px var(--yellow);
+    border-radius: 20px;
+    padding: 4px 10px 4px 10px;
+}
+
+#content-two{
+    display: none;
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+}
+
+.calculator input{
+    background-color: var(--grau-a);
+    color: #ffffff;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    padding: 1px 5px 1px 5px;
+    margin: 1px 5px 1px 5px;
+}
+
+.calculator input:active{
+    border: solid 1px var(--yellow);
+}
+
+#summe{
+    color: #ffffff;
+    border-radius: 10px;    
+    height: 30px;
+    width: 70px;
+    padding: 1px 5px 1px 5px;
+    margin: 1px 5px 1px 5px;
+}

@@ -17,7 +17,7 @@ body{
     --confluence-blue: #1C77F2;
     --rosa: #db0987;
     --green: #2fb000;
-    --yellow: #ccff25;
+    --yellow: #ffdd00;
     --grau: #111416;
     --grau-a: #212529;
     --grau-b: #343a40;
@@ -300,10 +300,52 @@ main{
     border-radius: 20px;
     background-color: var(--grau);
     font-size: large;
+    font-weight: 200;
 }
 
 .section-two span a svg{
     color: var(--confluence-blue);
+    padding-left: 5px;
+}
+
+.section-three{
+    background-color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three div h1{
+    color: #000000;
+    font-size: 8rem;
+    font-weight: 800;
+}
+
+.section-three div a {
+    border-radius: 20px;
+    background-color: var(--grau);
+    padding: 6px 13px 6px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-three div a p{
+    font-size: large;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.section-three div a svg{
+    color: var(--confluence-blue); 
     padding-left: 5px;
 }
 
