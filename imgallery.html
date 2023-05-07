@@ -143,15 +143,6 @@ main{
     object-fit: cover;
 }
 
-.hide{
-    display: none;
-}
-
-.display{
-    display: flex;
-}
-
-
     </style>
 </head>
 <body>
@@ -198,37 +189,28 @@ main{
         <script>
         let lBtn = document.querySelector("#leftbtn");
         let rBtn = document.querySelector("#rightbtn");
-        //document.getElementById('leftbtn').className = 'hide-left';
+        let currImg = document.getElementById("displayed-img");
 
         let counter = 1;
-        
-        function checkcounter(){
-            if (counter == 1){
-                lBtn.className = 'hide';
-            }
-            else{
-                lBtn.className = 'display';
-            }
-        }
 
         rBtn.onclick = () => {
-            checkcounter();
-            alert(counter);
             nextImg();
         }
         lBtn.onclick = () => {
-            checkcounter();
-            alert(counter);
             prevImg();
         }
         
+        //Bei 9 Bildern (d1 - d9)
+        //Bei + --> counter > 8 ? counter = 1 : counter++;
+        //Bei - --> counter < 2 ? counter = 9 : counter--;
+
         function nextImg() {
             counter > 8 ? counter = 1 : counter++; 
-            document.getElementById("displayed-img").src = "src/imgs-for-slide/d"+counter+".jpg";
+            currImg.src = "src/imgs-for-slide/d"+counter+".jpg";
         }
         function prevImg() {
-            counter > 8 ? counter = 1 : counter--; 
-            document.getElementById("displayed-img").src = "src/imgs-for-slide/d"+counter+".jpg";
+            counter < 2 ? counter = 9 : counter--; 
+            currImg.src = "src/imgs-for-slide/d"+counter+".jpg";
         }
 
         </script>
