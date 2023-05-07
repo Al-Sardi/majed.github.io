@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildergallerie</title>
+    <link rel="icon" href="src/gallery.png">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    --confluence-blue: #1C77F2;
+    --rosa: #db0987;
+    --green: #2fb000;
+    --yellow: #ccff25;
+    --grau: #111416;
+    --grau-a: #212529;
+    --grau-b: #343a40;
+    --grau-c: #495057;
+    --grau-d: #6c757d;
+    --grau-e: #adb5bd;
+    --grau-f: #ced4da;
+    --grau-g: #dee2e6;
+    --grau-h: #e9ecef;
+    --grau-i: #f8f9fa;
+    height: 100%;
+    background-color: var(--grau);
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 100;
+}   
+
+header{
+    border-bottom: solid 1px var(--confluence-blue);
+}
+
+header .content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+header .content .left{
+    align-items: center;
+    background-color: var(--grau-a);
+    border-radius: 10px;
+    padding: 2px 3px 0px 2px;
+}
+
+header .content .left a svg{
+    color: var(--confluence-blue);
+}
+
+header .content .mid{
+    align-items: center;
+}
+
+header .content .mid h1{
+    font-size: x-large;
+    font-weight: 400;
+}
+
+header .content .right{
+    align-items: center;
+}
+
+header .content .right img{
+    --header-content-right-img-width-and-height: 36px;
+    width: var(--header-content-right-img-width-and-height);
+    height: var(--header-content-right-img-width-and-height);
+    object-fit: cover;
+    padding: 3px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content{
+    display: block;
+    background-color: var(--grau);
+}
+
+.main-content .img-slide{
+    display: block;
+}
+
+#displayed-img{
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.main-content .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --main-controls-width-and-height: 50px;
+    padding: 10px;
+}
+
+.main-content .controls .left{
+    border: solid 1px var(--confluence-blue);
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.main-content .controls .left a svg{
+    color: var(--confluence-blue);
+    width: var(--main-controls-width-and-height);
+    height: var(--main-controls-width-and-height);
+    object-fit: cover;
+}
+
+.main-content .controls .right{
+    border: solid 1px var(--confluence-blue);
+    border-radius: 5px;
+    margin: 0 5px 0 5px;
+}
+
+.main-content .controls .right a svg{
+    color: var(--confluence-blue);
+    width: var(--main-controls-width-and-height);
+    height: var(--main-controls-width-and-height);
+    object-fit: cover;
+}
+
+.hide{
+    display: none;
+}
+
+.display{
+    display: flex;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <div class="left">
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="mid">
+                <h1>Bildergallerie</h1>
+            </div>
+            <div class="right">
+                <img src="src/gallery.png" alt="img">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <br>
+            <div class="img-slide">
+                <img id="displayed-img" src="src/imgs-for-slide/d1.jpg">
+            </div>
+            <div class="controls">
+                <div class="left">
+                    <a id="leftbtn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                          </svg>
+                    </a>
+                </div>
+                <div class="right">
+                    <a id="rightbtn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                          </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <script>
+        let lBtn = document.querySelector("#leftbtn");
+        let rBtn = document.querySelector("#rightbtn");
+        //document.getElementById('leftbtn').className = 'hide-left';
+
+        let counter = 1;
+        
+        function checkcounter(){
+            if (counter == 1){
+                lBtn.className = 'hide';
+            }
+            else{
+                lBtn.className = 'display';
+            }
+        }
+
+        rBtn.onclick = () => {
+            checkcounter();
+            alert(counter);
+            nextImg();
+        }
+        lBtn.onclick = () => {
+            checkcounter();
+            alert(counter);
+            prevImg();
+        }
+        
+        function nextImg() {
+            counter > 8 ? counter = 1 : counter++; 
+            document.getElementById("displayed-img").src = "src/imgs-for-slide/d"+counter+".jpg";
+        }
+        function prevImg() {
+            counter > 8 ? counter = 1 : counter--; 
+            document.getElementById("displayed-img").src = "src/imgs-for-slide/d"+counter+".jpg";
+        }
+
+        </script>
+    </main>
+</body>
+</html>
