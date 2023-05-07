@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    --confluence-blue: #1C77F2;
+    --grun-eins: #344e41;
+    --grun-zwei: #3a5a40;
+    --grun-drei: #588157;
+    --grun-vier: #a3b18a;
+    --grun-funf: #dad7cd;
+    height: 100%;
+    background-color: var(--grun-eins);
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 100;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(52, 78, 65, .9);
+    padding: 10px 20px 10px 20px;
+    border-bottom: solid 1px var(--grun-funf);
+}
+
+header .left{
+    display: block;
+}
+
+header .left a svg{
+    width: 30px;
+    height: 30px;
+    border: solid 1px var(--grun-funf);
+    border-radius: 30px;
+    color: #ffffff;
+    padding: 2px 4px 2px 2px;
+}
+
+
+.mid{
+    display: block;
+}
+
+.mid h1{
+    text-shadow: 1px 1px 5px var(--grun-drei);
+}
+
+.right{
+    display: block;
+}
+
+main{
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+
+.game-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

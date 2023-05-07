@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    --confluence-blue: #1C77F2;
+    --rosa: #db0987;
+    --green: #2fb000;
+    --yellow: #ccff25;
+    --grau: #111416;
+    --grau-a: #212529;
+    --grau-b: #343a40;
+    --grau-c: #495057;
+    --grau-d: #6c757d;
+    --grau-e: #adb5bd;
+    --grau-f: #ced4da;
+    --grau-g: #dee2e6;
+    --grau-h: #e9ecef;
+    --grau-i: #f8f9fa;
+    height: 100%;
+    background-color: var(--grau);
+    font-family: "Poppins", sans-serif;
+    display: block;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 100;
+}   
+
+header{
+    border-bottom: solid 1px var(--confluence-blue);
+}
+
+header .content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+header .content .left{
+    align-items: center;
+    background-color: var(--grau-a);
+    border-radius: 10px;
+    padding: 2px 3px 0px 2px;
+}
+
+header .content .left a svg{
+    color: var(--confluence-blue);
+}
+
+header .content .mid{
+    align-items: center;
+}
+
+header .content .mid h1{
+    font-size: x-large;
+    font-weight: 400;
+}
+
+header .content .right{
+    align-items: center;
+}
+
+header .content .right img{
+    --header-content-right-img-width-and-height: 36px;
+    width: var(--header-content-right-img-width-and-height);
+    height: var(--header-content-right-img-width-and-height);
+    object-fit: cover;
+    padding: 3px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-content{
+    display: block;
+    background-color: var(--grau);
+}
+
+.main-content .img-slide{
+    display: block;
+}
+
+#displayed-img{
+    width: 300px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.main-content .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --main-controls-width-and-height: 50px;
+    padding: 20px;
+}
+
+.main-content .controls .left{
+    border: solid 1px var(--confluence-blue);
+    border-radius: 5px;
+    margin: 0 20px 0 20px;
+}
+
+.main-content .controls .left a svg{
+    color: var(--confluence-blue);
+    width: var(--main-controls-width-and-height);
+    height: var(--main-controls-width-and-height);
+    object-fit: cover;
+}
+
+.main-content .controls .right{
+    border: solid 1px var(--confluence-blue);
+    border-radius: 5px;
+    margin: 0 20px 0 20px;
+}
+
+.main-content .controls .right a svg{
+    color: var(--confluence-blue);
+    width: var(--main-controls-width-and-height);
+    height: var(--main-controls-width-and-height);
+    object-fit: cover;
+}
