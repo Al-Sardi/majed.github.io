@@ -133,10 +133,30 @@ main{
     margin: 1px 5px 1px 5px;
 }
 
-#btnAddiere{
+.calc-btn-div{
+    padding: 8px;
+    margin: 10px 5px 10px 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px var(--yellow);
+    align-items: center;
+    background-color: var(--grau-a);
+}
+
+.calc-btn-div span{
+    color: var(--yellow);
+}
+
+.calc-btns{
     color: var(--yellow);
     background-color: var(--grau-a);
-    border-radius: 10px;    
     height: 30px;
     width: 30px;
+    margin: 0 15px 0 15px;
+}
+
+.calc-btns span{
+    font-size: small;
+    color: #ffffff;
 }
