@@ -114,20 +114,29 @@ main{
     color: #ffffff;
     border-radius: 10px;
     height: 30px;
-    width: 70px;
+    width: 50px;
     padding: 1px 5px 1px 5px;
     margin: 1px 5px 1px 5px;
 }
 
-.calculator input:active{
+.calculator input:focus{
     border: solid 1px var(--yellow);
+    width: 70px;
+    transition-duration: 1s;
+
 }
 
-#summe{
-    color: #ffffff;
+#num-display{
+    height: 30px;
+    width: 50px;
+    padding: 1px 5px 1px 5px;
+    margin: 1px 5px 1px 5px;
+}
+
+#btnAddiere{
+    color: var(--yellow);
+    background-color: var(--grau-a);
     border-radius: 10px;    
     height: 30px;
-    width: 70px;
-    padding: 1px 5px 1px 5px;
-    margin: 1px 5px 1px 5px;
+    width: 30px;
 }
