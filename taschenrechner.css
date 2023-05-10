@@ -87,21 +87,8 @@ main{
     font-weight: 300;
 }
 
-.content-one{
-    display: flex;
-    align-items: center;
-}
-
-#startbutton{
-    color: #ffffff;
-    background-color: var(--grau-a);
-    border: solid 1px var(--yellow);
-    border-radius: 20px;
-    padding: 4px 10px 4px 10px;
-}
-
 #content-two{
-    display: none;
+    display: block;
 }
 
 .calculator{
