@@ -30,4 +30,4 @@ document.querySelector('#btnDividiere').onclick = () =>{
     let O = document.getElementById('operator');
     O.textContent = "/";
     Z.textContent = X / Y;
-}
+    }

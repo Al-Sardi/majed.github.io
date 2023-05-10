@@ -15,13 +15,21 @@ html{
 
 body{
     --confluence-blue: #1C77F2;
-    --grun-eins: #344e41;
-    --grun-zwei: #3a5a40;
-    --grun-drei: #588157;
-    --grun-vier: #a3b18a;
-    --grun-funf: #dad7cd;
+    --rosa: #db0987;
+    --green: #2fb000;
+    --yellow: #ffdd00;
+    --grau: #111416;
+    --grau-a: #212529;
+    --grau-b: #343a40;
+    --grau-c: #495057;
+    --grau-d: #6c757d;
+    --grau-e: #adb5bd;
+    --grau-f: #ced4da;
+    --grau-g: #dee2e6;
+    --grau-h: #e9ecef;
+    --grau-i: #f8f9fa;
     height: 100%;
-    background-color: var(--grun-eins);
+    background-color: var(--grau);
     font-family: "Poppins", sans-serif;
     display: block;
     color: #ffffff;
@@ -33,48 +41,31 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
-    background-color: rgba(52, 78, 65, .9);
+    background-color: var(--grau);
     padding: 10px 20px 10px 20px;
-    border-bottom: solid 1px var(--grun-funf);
+    border-bottom: solid 1px var(--green);
 }
 
 header .left{
     display: block;
+    align-items: center;
+    background-color: var(--grau-a);
+    border-radius: 10px;
+    padding: 2px 3px 0px 2px;
 }
 
 header .left a svg{
-    width: 30px;
-    height: 30px;
-    border: solid 1px var(--grun-funf);
-    border-radius: 30px;
-    color: #ffffff;
-    padding: 2px 4px 2px 2px;
+    color: var(--green);
 }
 
-
-.mid{
+header .mid{
     display: block;
 }
 
-.mid h1{
-    text-shadow: 1px 1px 5px var(--grun-drei);
-}
-
-.right{
+header .right{
     display: block;
 }
 
 main{
     display: block;
-    width: 100%;
-    padding: 20px;
 }
-
-.game-area{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-

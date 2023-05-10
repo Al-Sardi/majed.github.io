@@ -197,8 +197,6 @@ body{
     transform: rotate(-45deg);
 }
 
-/* nav above */
-
 main{
     padding: 20px;
 }
@@ -213,12 +211,10 @@ main{
     border-radius: 30px;
 }
 
-/* Section 1 underneath */
 .section-one {
     width: 100%;
     height: 350px;
     border-radius: 30px;
-    /* transition: all 0.2s; */
     position: relative;
 }
   
@@ -227,7 +223,7 @@ main{
     height: 350px;
     border-radius: 30px;
     display: block;
-    background-color: var(--green);
+    background: linear-gradient(var(--green), #223dab);
 }
 
 .card-inner .one{
@@ -272,7 +268,7 @@ main{
 }
 
 .section-two{
-    background-color: var(--rosa);
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -309,7 +305,7 @@ main{
 }
 
 .section-three{
-    background-color: var(--yellow);
+    background: linear-gradient(#f1ff06, #3fec06d4);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -323,10 +319,9 @@ main{
     align-items: center;
 }
 
-.section-three div h1{
-    color: #000000;
-    font-size: 8rem;
-    font-weight: 800;
+.section-three div img{
+    width: 100px;
+    object-fit: cover;
 }
 
 .section-three div a {
@@ -350,16 +345,16 @@ main{
 }
 
 footer{
+    display: block; 
     color: var(--grau-i);
     font-size: small;
     font-weight: 100;
-    display: block; 
     border-top: solid 1px var(--grau);
 }
 
 .flog{
     margin: 0 15px 0 15px;
-    background-color: var(--confluence-blue);
+    background: linear-gradient(var(--confluence-blue), #701aa9);
     border-radius: 20px;
     padding: 24px 0px 24px 0px;
     display: block;
@@ -419,4 +414,28 @@ footer{
     width: 20px;
     height: 20px;
     color: var(--yellow);
+}
+
+.flog_three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grau);
+    padding: 10px 0 10px 0;
+}
+
+.flog_three div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px 15px 20px;
+    background-color: var(--grau-a);
+    border-radius: 40px;
+    display: flex;
+}
+
+.flog_three div img{
+    height: 40px;
+    object-fit: cover;
+    padding: 0 5px 0 5px;
 }
