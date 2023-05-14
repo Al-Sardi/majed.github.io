@@ -344,6 +344,46 @@ main{
     padding-left: 5px;
 }
 
+.section-four{
+    background: linear-gradient(#ff057e, #ff32bed4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-four div h1{
+    color: #000000;
+    font-size: 100px;
+}
+
+.section-four div a {
+    border-radius: 20px;
+    background-color: var(--grau);
+    padding: 6px 13px 6px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-four div a p{
+    font-size: large;
+    font-weight: 200;
+    color: #ffffff;
+}
+
+.section-four div a svg{
+    color: var(--confluence-blue); 
+    padding-left: 5px;
+}
+
 footer{
     display: block; 
     color: var(--grau-i);
