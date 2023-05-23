@@ -75,3 +75,4 @@ function changeHeading() {
     HEADING.textContent = newH;
 }
 changeHeadingBtn.addEventListener("click", changeHeading);
+
