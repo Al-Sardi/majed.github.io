@@ -33,7 +33,7 @@ body{
     font-family: "Poppins", sans-serif;
     display: block;
     color: #ffffff;
-    font-size: medium;
+    font-size: 15px;
     font-weight: 100;
 }
 
@@ -140,8 +140,26 @@ main section .right button{
     position: absolute;
     align-self: center;
     right: 40px; 
+    color: #ffffff;
 }
 
 main section .right svg{
     color: #ffffff;
+}
+
+#minus-plus-font-btn-wrap{
+    padding: 5px 5px 2px 5px;
+    margin-left: 8px;
+    border-radius: 5px;
+    position: absolute;
+    align-self: center;
+    right: 40px; 
+}
+
+.minus-plus-font-btns{
+    background-color: var(--confluence-blue);
+    color: #ffffff;
+    font-size: large;
+    border-radius: 10px;
+    padding: 7px 7px 4px 7px;
 }
