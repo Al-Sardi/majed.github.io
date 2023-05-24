@@ -211,6 +211,43 @@ main{
     border-radius: 30px;
 }
 
+.section-zero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.section-zero div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-zero div h1{
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.section-zero div img{
+    border-radius: 20px;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.section-zero .wrap-chev{
+    width: 30%;
+}
+
+.section-zero .wrap-chev a svg{
+    padding: 3vw;
+    background-color: var(--grau-a);
+    border-radius: 20%;
+    color: var(--confluence-blue);
+}
+
 .section-one {
     width: 100%;
     height: 350px;
