@@ -228,12 +228,12 @@ main{
 
 .section-zero div h1{
     color: #ffffff;
-    font-size: 50px;
+    font-size: 6vw;
 }
 
 .section-zero div img{
     border-radius: 20px;
-    height: 10rem;
+    height: 10vw;
     object-fit: cover;
 }
 
