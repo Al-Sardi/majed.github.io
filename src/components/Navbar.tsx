@@ -10,8 +10,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="ueberschrift">
-                <Image src="/confluence.png" id="confluence" alt="img" width={32} height={32} />
-                <Image src="/logo-al-sardi/svg/logo-no-background.svg" id="svgtitle" alt="img" width={150} height={22} />
+                <Image src="/confluence.png" id="confluence" alt="img" width={40} height={40} />
+                <Image src="/logo-al-sardi/svg/logo-no-background.svg" id="svgtitle" alt="img" width={247} height={30} priority />
             </div>
             <div className="nav-container">
                 <input
