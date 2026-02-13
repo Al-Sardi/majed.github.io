@@ -509,6 +509,8 @@ footer {
 .flog-content {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .flog-content a {
@@ -616,4 +618,15 @@ footer {
   color: var(--grau-e);
   font-size: large;
   user-select: none;
+}
+
+@media (max-width: 768px) {
+  .flog-content {
+    justify-content: center;
+  }
+
+  .flog-content a {
+    flex: 0 0 calc(50% - 18px);
+    max-width: calc(50% - 18px);
+  }
 }
