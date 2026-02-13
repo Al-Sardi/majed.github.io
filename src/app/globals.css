@@ -522,7 +522,11 @@ footer {
 }
 
 .flog-content a div {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .flog-content a div h5 {

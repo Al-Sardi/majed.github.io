@@ -27,6 +27,20 @@ const Footer = () => {
                             <h2>VS Code</h2>
                         </div>
                     </Link>
+                    <Link href="https://vercel.com">
+                        <div>
+                            <h5>Deployed on</h5>
+                            <Image src="https://img.icons8.com/?size=100&id=2xFS7aynbwiR&format=png&color=000000" alt="Vercel" width={40} height={40} />
+                            <h2>Vercel</h2>
+                        </div>
+                    </Link>
+                    <Link href="https://github.com">
+                        <div>
+                            <h5>Hosted on</h5>
+                            <Image src="https://img.icons8.com/?size=100&id=16318&format=png&color=000000" alt="GitHub" width={40} height={40} />
+                            <h2>GitHub</h2>
+                        </div>
+                    </Link>
                 </div>
             </div>
             )}
@@ -64,16 +78,16 @@ const Footer = () => {
             )}
             <div className="flog_three">
                 <div>
-                    <Link href="https://al-sardi.github.io/aviation.github.io">
-                        <Image src="/aviation-card.png" alt="Aviation" width={40} height={40} style={{ borderRadius: '8px' }} />
+                    <Link href="https://www.linkedin.com/in/majed-al-sardi-80671730b/">
+                        <Image src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt="LinkedIn" width={40} height={40} />
                     </Link>
                     <span className="separator">|</span>
                     <Link href="https://testing-agentic-workflow.onrender.com">
                         <Image src="/icons8-barde-94.png" alt="AI by Majed" width={40} height={40} />
                     </Link>
                     <span className="separator">|</span>
-                    <Link href="/taschenrechner">
-                        <Image src="https://img.icons8.com/fluency/96/calculator--v1.png" alt="Taschenrechner" width={40} height={40} />
+                    <Link href="https://al-sardi.github.io/aviation.github.io">
+                        <Image src="/aviation-card.png" alt="Aviation" width={40} height={40} style={{ borderRadius: '8px' }} />
                     </Link>
                 </div>
             </div>
