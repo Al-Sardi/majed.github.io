@@ -42,7 +42,7 @@ body {
 }
 
 .section-one {
-  background-color: #152744;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -64,12 +64,18 @@ body {
   color: var(--grau-i);
   display: flex;
   align-items: center;
-  padding: 6px 16px 6px 20px;
+  padding: 10px 16px 10px 20px;
   border-radius: 20px;
   background-color: var(--grau);
   font-size: large;
   font-weight: 200;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-one span button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
 
 .section-one span button svg {
@@ -85,12 +91,62 @@ body {
   border-radius: 20px;
 }
 
-.navbar {
-  width: 100%;
+.section-linkedin {
+  background-color: #152744;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.section-linkedin span {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
+}
+
+.section-linkedin span button {
+  color: var(--grau-i);
+  display: flex;
+  align-items: center;
+  padding: 10px 16px 10px 20px;
+  border-radius: 20px;
+  background-color: var(--grau);
+  font-size: large;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.section-linkedin span button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
+}
+
+.section-linkedin span button svg {
+  color: var(--confluence-blue);
+  padding-left: 5px;
+  width: 16px;
+  height: 16px;
+}
+
+.section-linkedin img {
+  width: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
   position: fixed;
+  height: 62px;
   background-color: rgba(17, 20, 22, .9);
   z-index: 10;
 }
@@ -198,12 +254,10 @@ body {
 }
 
 .ueberschrift {
-  position: absolute;
-  left: 15px;
+  padding-left: 15px;
   font-size: 1.1rem;
   font-weight: 400;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -283,11 +337,17 @@ main {
   color: var(--grau-i);
   display: flex;
   align-items: center;
-  padding: 4px 16px 4px 20px;
+  padding: 10px 16px 10px 20px;
   border-radius: 20px;
   background-color: var(--grau);
   font-size: large;
   font-weight: 200;
+  transition: all 0.3s ease;
+}
+
+.section-zero span a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
 
 .section-zero span a svg {
@@ -320,11 +380,17 @@ main {
   color: var(--grau-i);
   display: flex;
   align-items: center;
-  padding: 4px 16px 4px 20px;
+  padding: 10px 16px 10px 20px;
   border-radius: 20px;
   background-color: var(--grau);
   font-size: large;
   font-weight: 200;
+  transition: all 0.3s ease;
+}
+
+.section-two span a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
 
 .section-two span a svg {
@@ -355,10 +421,16 @@ main {
 .section-three div a {
   border-radius: 20px;
   background-color: var(--grau);
-  padding: 6px 13px 6px 15px;
+  padding: 10px 13px 10px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.section-three div a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
 
 .section-three div a p {
@@ -395,10 +467,16 @@ main {
 .section-four div a {
   border-radius: 20px;
   background-color: var(--grau);
-  padding: 6px 13px 6px 15px;
+  padding: 10px 13px 10px 15px;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.section-four div a:hover {
+  transform: scale(1.05);
+  filter: brightness(1.3);
 }
 
 .section-four div a p {
@@ -474,14 +552,24 @@ footer {
 .flog_two ul li {
   display: flex;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .flog_two ul li svg {
   padding-right: 20px;
-  width: 20px;
-  height: 20px;
-  color: var(--yellow);
+  width: 40px;
+  height: 40px;
+  color: var(--confluence-blue);
+}
+
+.name-link {
+  transition: all 0.3s ease;
+  display: inline-block;
+  color: white;
+}
+
+.name-link:hover {
+  filter: brightness(1.3);
 }
 
 .flog_three {
@@ -496,14 +584,32 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 20px 15px 20px;
+  gap: 20px;
+  padding: 15px 25px 15px 25px;
   background-color: var(--grau-a);
   border-radius: 40px;
-  display: flex;
+}
+
+.flog_three div a {
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.flog_three div a:hover {
+  transform: scale(1.1);
+  filter: brightness(1.3);
 }
 
 .flog_three div img {
   height: 40px;
   object-fit: cover;
-  padding: 0 5px 0 5px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.separator {
+  color: var(--grau-e);
+  font-size: large;
+  user-select: none;
 }
