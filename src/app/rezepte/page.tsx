@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Rezepte() {
-    const [activeRecipe, setActiveRecipe] = useState('thuna-pasta');
-
-    const recipes = {
+    const recipes: Record<string, {
+        title: string; emoji: string; difficulty: string; time: string; servings: string;
+        ingredients: string[]; stepsNudeln: string[]; stepsSosse: string[];
+    }> = {
         'thuna-pasta': {
             title: 'Thuna-Pasta',
             emoji: '🍝',
@@ -47,6 +48,7 @@ export default function Rezepte() {
         }
     };
 
+    const [activeRecipe] = useState('thuna-pasta');
     const currentRecipe = recipes[activeRecipe];
 
     return (
